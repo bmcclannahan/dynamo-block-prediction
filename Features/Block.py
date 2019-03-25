@@ -1,9 +1,5 @@
-from Instruction import Instruction
+from Instruction import Instruction, instruction_library
 
-instruction_library = ['mov','test','jz','jmp','sub','cmp','call','jnz','movzx','or','add','push','setz', 'xor', 'pop', 'lea']
-instruction_library.extend(['and', 'data16', 'lock', 'dec', 'shl', 'cmpxchg', 'setnz', 'nop', 'shr', 'movd', 'movdqa', 'movdqu'])
-instruction_library.extend(['neg', 'pmovmskb', 'mul', 'div', 'sar', 'cmovnz', 'movss', 'pcmpeqb', 'inc', 'pslldq'])
-instruction_library.extend(['psubb', 'pxor', 'movhpd', 'movlpd', 'pxor', 'psrldq', 'por', 'cmovb', 'sbb', 'rol','movsxd'])
 
 #A block is made up of instructions and a boolean that represents whether it
 #jumps or goes to the next line
@@ -21,13 +17,24 @@ class Block:
             hex_bits = None
             name = None
             assembly = None
+            index = 1
             for i in range(len(instruction)-1):
                 if instruction[i+1] in instruction_library:
                     hex_bits = instruction[1:i]
                     name = instruction[i]
                     assembly = instruction[i+1:]
+                    index = i
             #if name == None:
                 #print(instruction)
             if name != None:
-                instr_list.append(Instruction(mem,hex_bits,name,assembly))
+                instr_list.append(Instruction(instruction,index+1))
         return instr_list
+
+    def print_block(self):
+        print('------------------')
+        print(self.file_text)
+        print(self.jumps)
+        print('------------------')
+        for instruction in self.instructions:
+            print(instruction.op, instruction.first_parameter, instruction.second_paramater)
+        print('------------------')
