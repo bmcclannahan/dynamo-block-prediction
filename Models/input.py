@@ -1,3 +1,5 @@
+import numpy as np
+ 
 instruction_library = [('mov',0),('test',1),('jz',2),('jmp',3),('sub',4),('cmp',5),('call',6),('jnz',7),('movzx',8)]
 instruction_library.extend([('or',9),('add',10),('push',11),('setz',12),('xor',13),('pop',14),('lea',15),('and',16)])
 instruction_library.extend([('data16',17),('lock',18),('dec',19),('shl',20),('cmpxchg',21),('setnz',22),('nop',23)])
@@ -34,7 +36,8 @@ def get_feed_forward_input_array(filename):
             split = lines[i].split(' ')
             #print(split)
             if len(split) == 1:
-                if split[0]:
+                #print(split)
+                if split[0].rstrip() == 'True':
                     result = 1
                 else:
                     result = 0
@@ -47,4 +50,64 @@ def get_feed_forward_input_array(filename):
                 first_parameter = split[1]
                 second_parameter = split[2]
         
+    return np.array(network_input), np.array(network_output)
+
+def get_recurrent_three_input_array(filename):
+    file = open(filename, "r")
+    lines = file.readlines()
+
+    network_input = []
+    network_output = []
+    block_array = [0]*3
+    output_block = [[0]]*3
+
+    for i in range(1,len(lines)):
+        split = lines[i].split(' ')
+        if lines[i][0] == '-':
+            continue
+        elif len(split) == 1:
+            if split[0].rstrip() == "True":
+                output_block[2] = [1]
+                network_output.append(output_block)
+            else:
+                output_block[2] = [0]
+                network_output.append(output_block)
+            network_input.append(block_array)
+        else:
+            array = [0]*(len(instruction_library)+8)
+            array[instruction_dictionary[split[0]]] = 1
+            array[len(instruction_dictionary) + parameter_type_dict[split[1]]] = 1
+            array[len(instruction_dictionary) + 4 + parameter_type_dict[split[2]]] = 1
+            block_array[0] = block_array[1]
+            block_array[1] = block_array[2]
+            block_array[2] = array
+
+    return network_input, network_output
+
+def get_recurrent_input_array(filename):
+    file = open(filename, "r")
+    lines = file.readlines()
+
+    network_input = []
+    network_output = []
+    block_array = []
+
+    for i in range(1,len(lines)):
+        split = lines[i].split(' ')
+        if lines[i][0] == '-':
+            continue
+        elif len(split) == 1:
+            if split[0].rstrip() == "True":
+                network_output.append([1])
+            else:
+                network_output.append([0])
+            network_input.append(block_array)
+            block_array = []
+        else:
+            array = [[0]]*(len(instruction_library)+8)
+            array[instruction_dictionary[split[0]]] = [1]
+            array[len(instruction_dictionary) + parameter_type_dict[split[1]]] = [1]
+            array[len(instruction_dictionary) + 4 + parameter_type_dict[split[2]]] = [1]
+            block_array.append(array)
+
     return network_input, network_output
