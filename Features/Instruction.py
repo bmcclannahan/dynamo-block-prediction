@@ -2,6 +2,7 @@ instruction_library = ['mov','test','jz','jmp','sub','cmp','call','jnz','movzx',
 instruction_library.extend(['and', 'data16', 'lock', 'dec', 'shl', 'cmpxchg', 'setnz', 'nop', 'shr', 'movd', 'movdqa', 'movdqu'])
 instruction_library.extend(['neg', 'pmovmskb', 'mul', 'div', 'sar', 'cmovnz', 'movss', 'pcmpeqb', 'inc', 'pslldq'])
 instruction_library.extend(['psubb', 'pxor', 'movhpd', 'movlpd', 'pxor', 'psrldq', 'por', 'cmovb', 'sbb', 'rol','movsxd'])
+instruction_library.extend(['jb','jbe','bsf','punpcklbw','cmovnb','cmovl','cmovz','ucomiss','cvttss2si', 'imul', 'xchg'])
 
 #An instruction is a memory location, hex values, instruction name, and register/memory block_analysis_functions
 class Instruction:

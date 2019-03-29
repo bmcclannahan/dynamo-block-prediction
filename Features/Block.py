@@ -13,19 +13,14 @@ class Block:
     def build_instruction_list(self, instructions):
         instr_list = []
         for instruction in instructions:
-            mem = instruction[0]
-            hex_bits = None
             name = None
-            assembly = None
             index = 1
             for i in range(len(instruction)-1):
                 if instruction[i+1] in instruction_library:
-                    hex_bits = instruction[1:i]
                     name = instruction[i]
-                    assembly = instruction[i+1:]
                     index = i
-            #if name == None:
-                #print(instruction)
+            # if name == None:
+            #     print(instruction)
             if name != None:
                 instr_list.append(Instruction(instruction,index+1))
         return instr_list
