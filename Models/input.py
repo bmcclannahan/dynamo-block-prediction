@@ -6,7 +6,8 @@ instruction_library.extend([('data16',17),('lock',18),('dec',19),('shl',20),('cm
 instruction_library.extend([('shr',24),('movd',25),('movdqa',26),('movdqu',27),('neg',28),('pmovmskb',29),('mul',30)])
 instruction_library.extend([('div',31),('sar',32),('cmovnz',33),('movss',34),('pcmpeqb',35),('inc',36),('pslldq',37)])
 instruction_library.extend([('psubb',38),('pxor',39),('movhpd',40),('movlpd',41),('movsxd',42),('psrldq',43),('por',44)])
-instruction_library.extend([('cmovb',45),('sbb',46),('rol',47)])
+instruction_library.extend([('cmovb',45),('sbb',46),('rol',47),('jb',48),('jbe',49),('bsf',50),('punpcklbw',51),('cmovnb',52)])
+instruction_library.extend([('cmovl',53),('cmovz',54),('ucomiss',55),('cvttss2si',56),('imul',57),('xchg',58)])
 instruction_dictionary = dict(instruction_library)
 
 parameter_type_dict = {'m':0, 'r':1, 'o':2, 'n':3}
@@ -52,14 +53,15 @@ def get_feed_forward_input_array(filename):
         
     return np.array(network_input), np.array(network_output)
 
-def get_recurrent_three_input_array(filename):
+def get_recurrent_three_input_array(filename, size):
     file = open(filename, "r")
     lines = file.readlines()
 
-    network_input = []
-    network_output = []
+    network_input = [None]*size
+    network_output = [None]*size
     block_array = [0]*3
     output_block = [[0]]*3
+    index = 0
 
     for i in range(1,len(lines)):
         split = lines[i].split(' ')
@@ -68,11 +70,13 @@ def get_recurrent_three_input_array(filename):
         elif len(split) == 1:
             if split[0].rstrip() == "True":
                 output_block[2] = [1]
-                network_output.append(output_block)
+                network_output[index] = output_block[:]
             else:
                 output_block[2] = [0]
-                network_output.append(output_block)
-            network_input.append(block_array)
+                network_output[index] = output_block[:]
+            network_input[index] = block_array[:]
+            
+            index += 1
         else:
             array = [0]*(len(instruction_library)+8)
             array[instruction_dictionary[split[0]]] = 1
