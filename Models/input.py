@@ -70,10 +70,12 @@ def get_recurrent_three_input_array(filename, size):
         elif len(split) == 1:
             if split[0].rstrip() == "True":
                 output_block[2] = [1]
-                network_output[index] = output_block[:]
             else:
                 output_block[2] = [0]
-                network_output[index] = output_block[:]
+            if index >= size:
+                network_input = network_input + [None]
+                network_output = network_input + [None]
+            network_output[index] = output_block[:]
             network_input[index] = block_array[:]
             
             index += 1
