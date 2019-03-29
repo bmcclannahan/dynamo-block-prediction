@@ -3,11 +3,11 @@ from block_analysis_functions import average_instr_len_by_result
 from feature_writer import write_features_to_file
 from Block import Block
 
-# file =read_unprocessed_file('./blocks2.txt')
-# print(file[1])
-# blocks = filter_jz_blocks(file)
-# write_blocks(blocks,'./filtered_blocks2.txt')
-# print(blocks[0])
+file =read_unprocessed_file('./blocks2.txt')
+print(file[1])
+blocks = filter_jz_blocks(file)
+write_blocks(blocks,'./filtered_blocks2.txt')
+print(blocks[0])
 file_blocks = read_file('./filtered_blocks2.txt')
 blocks = []
 
