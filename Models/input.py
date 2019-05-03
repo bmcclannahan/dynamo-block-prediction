@@ -53,6 +53,43 @@ def get_feed_forward_input_array(filename):
         
     return np.array(network_input), np.array(network_output)
 
+def get_recurrent_n_input_array(filename, size, n=3):
+    file = open(filename, "r")
+    lines = file.readlines()
+
+    network_input = [None]*size
+    network_output = [None]*size
+    block_array = [[0]*(len(instruction_library)+8)]*n
+    output_block = [[0]]*n
+    index = 0
+
+    for i in range(1,len(lines)):
+        split = lines[i].split(' ')
+        if lines[i][0] == '-':
+            continue
+        elif len(split) == 1:
+            if split[0].rstrip() == "True":
+                output_block[n-1] = [1]
+            else:
+                output_block[n-1] = [0]
+            if index >= size:
+                network_input = network_input + [None]
+                network_output = network_input + [None]
+            network_output[index] = output_block[:]
+            network_input[index] = block_array[:]
+            block_array = [[0]*(len(instruction_library)+8)]*n            
+            index += 1
+        else:
+            array = [0]*(len(instruction_library)+8)
+            array[instruction_dictionary[split[0]]] = 1
+            array[len(instruction_dictionary) + parameter_type_dict[split[1]]] = 1
+            array[len(instruction_dictionary) + 4 + parameter_type_dict[split[2]]] = 1
+            for i in range(n-1):
+                block_array[i] = block_array[i+1]
+            block_array[n-1] = array
+
+    return network_input, network_output
+
 def get_recurrent_three_input_array(filename, size):
     file = open(filename, "r")
     lines = file.readlines()
