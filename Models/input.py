@@ -1,6 +1,6 @@
 import numpy as np
 
-jump_library = [('jz',0),('jnz',1),('jb',2),('jbe',3)]
+jump_library = {'jz':0,'jnz':1,'jb':2,'jbe':3}
  
 instruction_library = [('mov',0),('test',1),('jz',2),('jmp',3),('sub',4),('cmp',5),('call',6),('jnz',7),('movzx',8)]
 instruction_library.extend([('or',9),('add',10),('push',11),('setz',12),('xor',13),('pop',14),('lea',15),('and',16)])
@@ -17,9 +17,6 @@ parameter_type_dict = {'m':0, 'r':1, 'o':2, 'n':3}
 def get_simple_feed_forward_input_array(filename):
     file = open(filename,"r")
     lines = file.readlines()
-    prev_opcode = ''
-    prev_first = ''
-    prev_second = ''
     opcode = ''
     first_parameter = ''
     second_parameter = ''
@@ -29,10 +26,11 @@ def get_simple_feed_forward_input_array(filename):
     network_output = []
     for i in range(1,len(lines)):
         if lines[i][0] == '-':
+            #print(opcode,first_parameter,second_parameter)
             array = [0]*(len(jump_library)+8)
-            array[jump_library[prev_opcode]] = 1
-            array[len(jump_library) + parameter_type_dict[prev_first]] = 1
-            array[len(jump_library) + 4 + parameter_type_dict[prev_second]] = 1
+            array[jump_library[opcode]] = 1
+            array[len(jump_library) + parameter_type_dict[first_parameter]] = 1
+            array[len(jump_library) + 4 + parameter_type_dict[second_parameter]] = 1
             network_input.append(array)
             network_output.append(result)
         else:
@@ -45,10 +43,6 @@ def get_simple_feed_forward_input_array(filename):
                 else:
                     result = 0
             else:
-                prev_opcode = opcode
-                prev_first = first_parameter
-                prev_second = second_parameter
-                
                 opcode = split[0]
                 first_parameter = split[1]
                 second_parameter = split[2]
