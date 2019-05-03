@@ -8,6 +8,7 @@ input_array, output_array = get_simple_feed_forward_input_array('../Features/fea
 
 model = Sequential()
 model.add(Dense(units=12,activation='relu',input_dim=12))
+model.add(Dense(units=8,activation='relu'))
 model.add(Dense(units=1,activation='sigmoid'))
 model.compile(loss='binary_crossentropy',optimizer='sgd',metrics=['accuracy'])
 model.fit(input_array, output_array, epochs=100, batch_size=32)
