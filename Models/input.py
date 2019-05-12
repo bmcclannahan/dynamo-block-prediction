@@ -14,6 +14,34 @@ instruction_dictionary = dict(instruction_library)
 
 parameter_type_dict = {'m':0, 'r':1, 'o':2, 'n':3}
 
+def build_recurrent_input_from_multiple_files(file_list, input_func):
+    with open(file_list[0]) as f:
+        lines = f.readlines()
+    total = 0
+    for i in range(len(lines)):
+        if lines[i][0] == '-':
+            total += 1
+    network_input, network_output = input_func(file_list[0], total-1)
+    for file in file_list[1:]:
+        with open(file) as f:
+            lines = f.readlines()
+        total = 0
+        for i in range(len(lines)):
+            if lines[i][0] == '-':
+                total += 1
+        i,o = input_func(file, total-1)
+        network_input = np.concatenate([network_input,i])
+        network_output = np.concatenate([network_output,o])
+    return network_input, network_output
+
+def build_input_from_multiple_files(file_list, input_func):
+    network_input, network_output = input_func(file_list[0])
+    for file in file_list[1:]:
+        i,o = input_func(file)
+        network_input = np.concatenate([network_input,i])
+        network_output = np.concatenate([network_output,o])
+    return network_input, network_output
+
 def get_simple_feed_forward_input_array(filename):
     file = open(filename,"r")
     lines = file.readlines()
