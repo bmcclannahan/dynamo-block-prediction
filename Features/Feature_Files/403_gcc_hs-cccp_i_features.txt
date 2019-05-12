@@ -1,0 +1,4487 @@
+--------------------
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+jmp m n 
+sub m o 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+mov o n 
+test o m 
+jnz m n 
+False
+----------------------------------------
+mov m m 
+mov m m 
+mov m m 
+call m o 
+movzx o o 
+mov o n 
+or m o 
+mov m m 
+movzx o o 
+test r r 
+jz m n 
+True
+----------------------------------------
+test r m 
+jnz m n 
+False
+----------------------------------------
+push r o 
+push r o 
+push r o 
+push r o 
+mov m m 
+push r o 
+sub m o 
+mov o n 
+mov m m 
+mov m m 
+mov m m 
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+test r r 
+setz o r 
+lea o o 
+movzx r o 
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+xor r o 
+xor r o 
+mov m m 
+call m o 
+push r o 
+push r o 
+mov m m 
+push r o 
+mov m m 
+lea o o 
+mov m m 
+call m o 
+push r o 
+push r o 
+mov m m 
+mov o n 
+xor r o 
+sub m o 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+cmpxchg r o 
+jz m n 
+True
+----------------------------------------
+mov o n 
+xor r o 
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+nop m n 
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov o n 
+mov m m 
+test r r 
+jz m n 
+True
+----------------------------------------
+lea o o 
+mov o n 
+jmp m n 
+mov o n 
+add m o 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+dec o o 
+jz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov o n 
+and m o 
+jnz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+push r o 
+lea o o 
+push r o 
+push r o 
+push r o 
+mov m m 
+push r o 
+lea o o 
+push r o 
+mov m m 
+mov m m 
+sub r o 
+sub m o 
+sar m o 
+call m o 
+sub m o 
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+lea o o 
+cmp o m 
+jnz m n 
+False
+----------------------------------------
+jmp m n 
+lea o o 
+lea o o 
+push r o 
+sub r o 
+mov m m 
+sar m o 
+mov m m 
+shr m o 
+add r o 
+sar m o 
+jz m n 
+True
+----------------------------------------
+cmp r r 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+mov o n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+test r r 
+jnz m n 
+False
+----------------------------------------
+lea o o 
+call m o 
+xor r o 
+jmp m n 
+mov m m 
+mov m m 
+xor r o 
+rol m o 
+mov m m 
+mov m m 
+mov m m 
+mov m m 
+mov m m 
+lea o o 
+xor r o 
+rol m o 
+mov m m 
+mov o n 
+nop n n 
+xor r o 
+rol m o 
+mov m m 
+jmp m n 
+test r r 
+push r o 
+mov m m 
+jz m n 
+True
+----------------------------------------
+test r r 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov m m 
+lea o o 
+call m o 
+test r r 
+push r o 
+jz m n 
+False
+----------------------------------------
+movdqu o o 
+pxor r o 
+movdqa r o 
+pcmpeqb r o 
+pcmpeqb r o 
+pmovmskb r o 
+pmovmskb r o 
+test r r 
+jz m n 
+False
+----------------------------------------
+lea o o 
+xor r o 
+and r o 
+jz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+mov m m 
+test r r 
+jnz m n 
+True
+----------------------------------------
+jmp m n 
+mov o n 
+xor r o 
+mov o n 
+cmpxchg r o 
+jz m n 
+True
+----------------------------------------
+mov o n 
+or o o 
+jnz m n 
+False
+----------------------------------------
+mov m m 
+mov m m 
+nop n n 
+mov o n 
+dec o o 
+jz m n 
+True
+----------------------------------------
+and m o 
+and m o 
+mov o n 
+xor r o 
+and m o 
+and m o 
+cmp r r 
+jz m n 
+False
+----------------------------------------
+pxor r o 
+movdqa o o 
+movdqa o o 
+pcmpeqb r o 
+pslldq m o 
+pcmpeqb r o 
+psubb r o 
+pmovmskb r o 
+shr r o 
+shr r o 
+sub r o 
+jnz m n 
+True
+----------------------------------------
+lea o o 
+lea o o 
+test r r 
+jz m n 
+True
+----------------------------------------
+test r r 
+jnz m n 
+True
+----------------------------------------
+movdqu o o 
+pcmpeqb r o 
+pmovmskb r o 
+test r r 
+jz m n 
+False
+----------------------------------------
+mov m m 
+mov o n 
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+movzx o o 
+test r r 
+jz m n 
+False
+----------------------------------------
+cmp o m 
+jnz m n 
+True
+----------------------------------------
+mov o n 
+movzx o o 
+add m o 
+lea o o 
+test r r 
+jnz m n 
+True
+----------------------------------------
+cmp r o 
+jnz m n 
+True
+----------------------------------------
+add m o 
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+lea o o 
+mov m m 
+mov m m 
+call m o 
+test r r 
+jz m n 
+False
+----------------------------------------
+cmp r m 
+jz m n 
+False
+----------------------------------------
+movlpd o o 
+movlpd o o 
+movhpd o o 
+movhpd o o 
+pxor r o 
+pcmpeqb r o 
+pcmpeqb r o 
+psubb r o 
+pmovmskb r o 
+sub m o 
+jnz m n 
+True
+----------------------------------------
+bsf r o 
+sub r o 
+jbe m n 
+False
+----------------------------------------
+test r r 
+jnz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+cmp r m 
+jnz m n 
+False
+----------------------------------------
+movdqu o o 
+pxor r o 
+movdqa r o 
+pcmpeqb r o 
+pcmpeqb r o 
+por r o 
+pmovmskb r o 
+test r r 
+jz m n 
+False
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+True
+----------------------------------------
+lea o o 
+jmp m n 
+mov o n 
+mov o n 
+jmp m n 
+movsxd r o 
+mov o n 
+mov o n 
+lea o o 
+mov m m 
+call m o 
+push r o 
+mov m m 
+push r o 
+push r o 
+push r o 
+push r o 
+mov m m 
+push r o 
+mov m m 
+mov m m 
+mov m m 
+sub m o 
+mov o n 
+mov m m 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+True
+----------------------------------------
+and m o 
+pcmpeqb o o 
+pcmpeqb o o 
+pcmpeqb o o 
+pmovmskb r o 
+pmovmskb r o 
+pmovmskb r o 
+shl m o 
+shl m o 
+or r o 
+shl m o 
+or r o 
+mov m m 
+xor r o 
+and m o 
+sar r o 
+test r r 
+jz m n 
+False
+----------------------------------------
+test r r 
+mov m m 
+mov o n 
+jz m n 
+True
+----------------------------------------
+and m o 
+and m o 
+mov o n 
+xor r o 
+and m o 
+and m o 
+cmp r r 
+jz m n 
+True
+----------------------------------------
+movdqa o o 
+pxor r o 
+pcmpeqb r o 
+pcmpeqb o o 
+psubb r o 
+pmovmskb r o 
+shr r o 
+shr r o 
+sub r o 
+jnz m n 
+True
+----------------------------------------
+lea o o 
+lea o o 
+test r r 
+jz m n 
+True
+----------------------------------------
+cmp o m 
+jnz m n 
+False
+----------------------------------------
+test r r 
+mov m m 
+mov o n 
+jz m n 
+False
+----------------------------------------
+cmp o m 
+jz m n 
+False
+----------------------------------------
+test r r 
+movsxd r o 
+jz m n 
+False
+----------------------------------------
+movlpd o o 
+movlpd o o 
+movhpd o o 
+movhpd o o 
+pxor r o 
+pcmpeqb r o 
+pcmpeqb r o 
+psubb r o 
+pmovmskb r o 
+sub m o 
+jnz m n 
+True
+----------------------------------------
+test r r 
+movsxd r o 
+jnz m n 
+True
+----------------------------------------
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+lea o o 
+mov o n 
+mov m m 
+mov m m 
+mov m m 
+call m o 
+test r r 
+jz m n 
+False
+----------------------------------------
+push r o 
+push r o 
+mov m m 
+push r o 
+push r o 
+mov m m 
+push r o 
+push r o 
+mov m m 
+mov m m 
+sub m o 
+movzx o o 
+mov m m 
+call m o 
+movd r o 
+mov m m 
+punpcklbw r o 
+test r r 
+jz m n 
+False
+----------------------------------------
+movdqu o o 
+pcmpeqb r o 
+pmovmskb r o 
+test r r 
+jnz m n 
+False
+----------------------------------------
+sub m o 
+jbe m n 
+True
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+True
+----------------------------------------
+test r r 
+mov o n 
+jnz m n 
+False
+----------------------------------------
+cmp r m 
+jz m n 
+False
+----------------------------------------
+jbe m n 
+False
+----------------------------------------
+cmp o m 
+jz m n 
+False
+----------------------------------------
+cmp o m 
+jz m n 
+False
+----------------------------------------
+mov m m 
+mov o n 
+mov m m 
+call m o 
+movd r o 
+mov m m 
+punpcklbw r o 
+test r r 
+jz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+mov m m 
+jz m n 
+True
+----------------------------------------
+mov m m 
+mov m m 
+call m o 
+push r o 
+mov m m 
+push r o 
+push r o 
+push r o 
+push r o 
+mov m m 
+push r o 
+sub m o 
+mov m m 
+mov o n 
+mov o n 
+call m o 
+push r o 
+push r o 
+mov m m 
+lea o o 
+sub m o 
+cmp r m 
+jbe m n 
+False
+----------------------------------------
+cmp r m 
+jz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+cmp r m 
+lea o o 
+jnz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+test o m 
+jnz m n 
+True
+----------------------------------------
+movdqu o o 
+pxor r o 
+movdqa r o 
+pcmpeqb r o 
+pcmpeqb r o 
+por r o 
+pmovmskb r o 
+test r r 
+jz m n 
+False
+----------------------------------------
+mov m m 
+mov m m 
+mov m m 
+sub r o 
+mov m m 
+call m o 
+push r o 
+push r o 
+mov m m 
+push r o 
+push r o 
+mov m m 
+sub m o 
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+lea o o 
+mov m m 
+mov o n 
+xor r o 
+xor r o 
+nop m n 
+movzx o o 
+test o m 
+mov m m 
+jz m n 
+False
+----------------------------------------
+sub m o 
+add m o 
+cmp r m 
+cmovnb r o 
+add m o 
+cmp r r 
+jnz m n 
+True
+----------------------------------------
+movzx o o 
+test o m 
+mov m m 
+jz m n 
+False
+----------------------------------------
+add m o 
+cmp r r 
+jnz m n 
+True
+----------------------------------------
+test r r 
+jnz m n 
+False
+----------------------------------------
+push r o 
+push r o 
+sub m o 
+mov o n 
+mov o n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+mov m m 
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+and m o 
+jz m n 
+True
+----------------------------------------
+mov o n 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+cmpxchg r o 
+jz m n 
+True
+----------------------------------------
+mov m m 
+push r o 
+push r o 
+add m o 
+push r o 
+push r o 
+push r o 
+push r o 
+mov m m 
+and m o 
+mov m m 
+sub m o 
+cmp r m 
+mov o n 
+cmovb r o 
+mov m m 
+xor r o 
+test r r 
+jz m n 
+False
+----------------------------------------
+mov m m 
+shr m o 
+lea o o 
+mov o n 
+mov m m 
+lea o o 
+test r r 
+jz m n 
+True
+----------------------------------------
+mov m m 
+shr m o 
+mov m m 
+add m o 
+add r o 
+lea o o 
+mov o n 
+lea o o 
+cmp r r 
+jz m n 
+True
+----------------------------------------
+mov m m 
+mov m m 
+lea o o 
+shr m o 
+shr m o 
+mov m m 
+mov m m 
+add m o 
+mov m m 
+mov m m 
+add m o 
+mov m m 
+shr m o 
+mov m m 
+lea o o 
+mov m m 
+mov m m 
+mov m m 
+mov o n 
+shr m o 
+shr m o 
+shr m o 
+sub r o 
+mov m m 
+mov m m 
+mov m m 
+add m o 
+add m o 
+add m o 
+mov m m 
+mov m m 
+mov m m 
+mov m m 
+mov m m 
+mov m m 
+mov m m 
+mov m m 
+lea o o 
+mov o n 
+mov m m 
+jmp m n 
+mov o n 
+cmp r r 
+jz m n 
+True
+----------------------------------------
+mov m m 
+mov o n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+lea o o 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov m m 
+mov o n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+lea o o 
+sub r o 
+xor r o 
+lea o o 
+cmp r r 
+mov m m 
+setnz o r 
+or m o 
+or m o 
+shl m o 
+mov m m 
+add m o 
+or r o 
+mov m m 
+mov m m 
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+cmp o m 
+jz m n 
+True
+----------------------------------------
+dec o o 
+jz m n 
+True
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+mov m m 
+mov o n 
+mov m m 
+jmp m n 
+movzx o o 
+test o m 
+mov m m 
+jnz m n 
+True
+----------------------------------------
+mov o n 
+add m o 
+mov m m 
+add m o 
+cmp r r 
+jz m n 
+False
+----------------------------------------
+movzx o o 
+test o m 
+mov m m 
+jnz m n 
+True
+----------------------------------------
+add m o 
+cmp r r 
+jz m n 
+False
+----------------------------------------
+add m o 
+mov m m 
+add m o 
+cmp r r 
+jnz m n 
+False
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+mov m m 
+mov m m 
+mov m m 
+call m o 
+test r r 
+jz m n 
+False
+----------------------------------------
+test r r 
+jnz m n 
+True
+----------------------------------------
+test r m 
+jz m n 
+True
+----------------------------------------
+test r m 
+jz m n 
+False
+----------------------------------------
+movzx o o 
+mov m m 
+add m o 
+add m o 
+test r m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+add m o 
+add m o 
+test r m 
+jz m n 
+True
+----------------------------------------
+and m o 
+jz m n 
+True
+----------------------------------------
+test r m 
+jz m n 
+False
+----------------------------------------
+test r m 
+jz m n 
+False
+----------------------------------------
+movzx o o 
+mov m m 
+inc r o 
+inc r o 
+test r m 
+jz m n 
+True
+----------------------------------------
+test r m 
+jz m n 
+True
+----------------------------------------
+test r m 
+jz m n 
+True
+----------------------------------------
+and m o 
+jz m n 
+True
+----------------------------------------
+push r o 
+push r o 
+push r o 
+push r o 
+sub m o 
+mov o n 
+mov o n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+lea o o 
+test r m 
+jnz m n 
+False
+----------------------------------------
+test r m 
+lea o o 
+jz m n 
+True
+----------------------------------------
+test r m 
+jnz m n 
+False
+----------------------------------------
+cmp r m 
+jbe m n 
+False
+----------------------------------------
+test r m 
+jnz m n 
+False
+----------------------------------------
+lea o o 
+mov o n 
+cmp r m 
+jbe m n 
+False
+----------------------------------------
+mov o n 
+lea o o 
+test r r 
+jnz m n 
+False
+----------------------------------------
+cmp r m 
+jz m n 
+True
+----------------------------------------
+and m o 
+shr m o 
+lea o o 
+mov o n 
+mov m m 
+lea o o 
+cmp r r 
+jz m n 
+False
+----------------------------------------
+test r r 
+mov o n 
+setnz o r 
+nop m n 
+test r r 
+setnz o r 
+and r o 
+jz m n 
+True
+----------------------------------------
+mov m m 
+mov m m 
+cmp r m 
+jz m n 
+True
+----------------------------------------
+cmpxchg r o 
+cmp r r 
+jz m n 
+True
+----------------------------------------
+cmp r r 
+jz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+jmp m n 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+xor r o 
+xor r o 
+mov m m 
+mov o n 
+mov o n 
+mov m m 
+call m o 
+test r r 
+push r o 
+mov m m 
+push r o 
+mov m m 
+push r o 
+mov m m 
+push r o 
+mov m m 
+push r o 
+push r o 
+jz m n 
+True
+----------------------------------------
+test r m 
+jz m n 
+True
+----------------------------------------
+cmp r m 
+mov m m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+lea o o 
+mov o n 
+lea o o 
+mov o n 
+lea o o 
+lea o o 
+mov o n 
+lea o o 
+cmp r r 
+cmovl r o 
+mov o n 
+add o o 
+cmp r r 
+cmovl r o 
+cmp r r 
+jb m n 
+False
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+lea o o 
+mov m m 
+nop m n 
+movzx o o 
+rol m o 
+add m o 
+add r o 
+cmp r r 
+jnz m n 
+True
+----------------------------------------
+movzx o o 
+rol m o 
+add m o 
+add r o 
+cmp r r 
+jnz m n 
+True
+----------------------------------------
+mov m m 
+test r r 
+mov o n 
+cmovz r o 
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+mov m m 
+mov m m 
+xor r o 
+div r o 
+sub m o 
+mov m m 
+mov m m 
+xor r o 
+div r o 
+mov o n 
+mov m m 
+lea o o 
+mov m m 
+lea o o 
+lea o o 
+lea o o 
+lea o o 
+lea o o 
+lea o o 
+jmp m n 
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+cmp r r 
+jnz m n 
+False
+----------------------------------------
+test r r 
+mov o n 
+mov o n 
+mov o n 
+mov o n 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+lea o o 
+lea o o 
+mov o n 
+mov o n 
+xor r o 
+mov m m 
+mov m m 
+jmp m n 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+add r o 
+cmp r m 
+mov m m 
+mov m m 
+mov m m 
+jnz m n 
+True
+----------------------------------------
+add m o 
+add m o 
+add m o 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+cmp r m 
+jz m n 
+True
+----------------------------------------
+cmpxchg r o 
+cmp r r 
+mov m m 
+mov m m 
+jnz m n 
+False
+----------------------------------------
+jmp m n 
+mov o n 
+shr m o 
+sub m o 
+cmp r r 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+lea o o 
+test r r 
+jnz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+test r m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov m m 
+add m o 
+add m o 
+test r m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+add m o 
+add m o 
+and m o 
+jz m n 
+True
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov o n 
+mov m m 
+xor r o 
+mov m m 
+mov o n 
+lea o o 
+jmp m n 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+mov m m 
+shl m o 
+mov o n 
+mov o n 
+call m o 
+push r o 
+push r o 
+push r o 
+push r o 
+push r o 
+push r o 
+sub m o 
+cmp r m 
+jbe m n 
+False
+----------------------------------------
+cmp r m 
+mov o n 
+mov o n 
+jz m n 
+False
+----------------------------------------
+mov m m 
+mov o n 
+xor m o 
+test r r 
+cmovz r o 
+cmp r r 
+jnz m n 
+False
+----------------------------------------
+lea o o 
+mov o n 
+movsxd r o 
+cmp r o 
+jb m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+test r r 
+mov m m 
+mov m m 
+mov o n 
+mov o n 
+mov o n 
+mov o n 
+mov m m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+cmp r r 
+mov m m 
+jb m n 
+False
+----------------------------------------
+test r r 
+jnz m n 
+False
+----------------------------------------
+jmp m n 
+mov o n 
+cmp o m 
+jz m n 
+False
+----------------------------------------
+add r o 
+mov m m 
+add m o 
+cmp r r 
+jz m n 
+False
+----------------------------------------
+and m o 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+jmp m n 
+add m o 
+cmp r r 
+jz m n 
+False
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov o n 
+mov o n 
+mov m m 
+cmp r m 
+jnz m n 
+True
+----------------------------------------
+add m o 
+add m o 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+mov o n 
+cmp o m 
+jz m n 
+False
+----------------------------------------
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+cmp r r 
+jnz m n 
+False
+----------------------------------------
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+nop n n 
+mov o n 
+cmp o m 
+jz m n 
+False
+----------------------------------------
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+test r r 
+jnz m n 
+True
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+cmp o m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+lea o o 
+mov m m 
+cmp r r 
+jz m n 
+False
+----------------------------------------
+pxor r o 
+movdqa o o 
+movdqa o o 
+pcmpeqb r o 
+pslldq m o 
+pcmpeqb r o 
+psubb r o 
+pmovmskb r o 
+shr r o 
+shr r o 
+sub r o 
+jnz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+test r r 
+mov m m 
+jnz m n 
+True
+----------------------------------------
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov m m 
+mov m m 
+movsxd r o 
+mov o n 
+mov o n 
+lea o o 
+mov m m 
+call m o 
+push r o 
+mov m m 
+push r o 
+push r o 
+push r o 
+push r o 
+mov m m 
+push r o 
+mov m m 
+mov m m 
+mov m m 
+sub m o 
+mov o n 
+mov m m 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+cmp r r 
+jnz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov o n 
+jmp m n 
+mov m m 
+mov m m 
+movsxd r o 
+mov o n 
+mov o n 
+lea o o 
+mov m m 
+call m o 
+push r o 
+mov m m 
+push r o 
+push r o 
+push r o 
+push r o 
+mov m m 
+push r o 
+mov m m 
+mov m m 
+mov m m 
+sub m o 
+mov o n 
+mov m m 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+mov m m 
+mov m m 
+mov o n 
+call m o 
+push r o 
+push r o 
+lea o o 
+push r o 
+push r o 
+xor r o 
+push r o 
+push r o 
+xor r o 
+mov o n 
+mov o n 
+sub m o 
+cmp r m 
+mov m m 
+mov m m 
+mov m m 
+jnz m n 
+False
+----------------------------------------
+jmp m n 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov m m 
+mov o n 
+movzx o o 
+lea o o 
+add r o 
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov o n 
+cmp r r 
+jz m n 
+True
+----------------------------------------
+cmp r m 
+jnz m n 
+True
+----------------------------------------
+add m o 
+add m o 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+test r r 
+setz o r 
+cmp r m 
+jnz m n 
+True
+----------------------------------------
+test r r 
+jnz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+lea o o 
+test r r 
+mov m m 
+jnz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+lea o o 
+mov o n 
+xor r o 
+lea o o 
+jmp m n 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+lea o o 
+mov m m 
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov o n 
+lea o o 
+mov o n 
+mov m m 
+lea o o 
+mov m m 
+mov o n 
+add m o 
+mov m m 
+mov o n 
+add m o 
+cmp r r 
+mov m m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov o n 
+cmp r r 
+jz m n 
+False
+----------------------------------------
+lea o o 
+cmp r r 
+jz m n 
+True
+----------------------------------------
+mov m m 
+cmp r m 
+jnz m n 
+True
+----------------------------------------
+add m o 
+add m o 
+add m o 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+cmp r r 
+jz m n 
+False
+----------------------------------------
+lea o o 
+cmp r r 
+jz m n 
+True
+----------------------------------------
+mov m m 
+mov o n 
+add m o 
+jmp m n 
+mov o n 
+test r r 
+jnz m n 
+True
+----------------------------------------
+mov o n 
+mov m m 
+cmp r m 
+sbb r o 
+and m o 
+add m o 
+nop n n 
+mov o n 
+test r r 
+jnz m n 
+True
+----------------------------------------
+sub m o 
+mov o n 
+xor r o 
+cmpxchg r o 
+jz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jnz m n 
+True
+----------------------------------------
+mov o n 
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov m m 
+test r r 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+dec o o 
+jz m n 
+True
+----------------------------------------
+push r o 
+push r o 
+push r o 
+push r o 
+push r o 
+push r o 
+mov m m 
+sub m o 
+test r r 
+jz m n 
+False
+----------------------------------------
+cmp o m 
+jnz m n 
+True
+----------------------------------------
+mov o n 
+mov m m 
+test r r 
+jnz m n 
+True
+----------------------------------------
+jmp m n 
+mov o n 
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+movzx o o 
+mov m m 
+add m o 
+add m o 
+nop m n 
+test r m 
+jz m n 
+True
+----------------------------------------
+pxor r o 
+movdqa o o 
+movdqa o o 
+pcmpeqb r o 
+pslldq m o 
+pcmpeqb r o 
+psubb r o 
+pmovmskb r o 
+shr r o 
+shr r o 
+sub r o 
+jnz m n 
+False
+----------------------------------------
+movdqa o o 
+movdqa o o 
+movdqa r o 
+psrldq m o 
+pslldq m o 
+por r o 
+pcmpeqb r o 
+pcmpeqb r o 
+psubb r o 
+pmovmskb r o 
+sub m o 
+jnz m n 
+True
+----------------------------------------
+lea o o 
+lea o o 
+lea o o 
+test r r 
+jz m n 
+False
+----------------------------------------
+test r r 
+jnz m n 
+False
+----------------------------------------
+test r r 
+mov m m 
+mov o n 
+jz m n 
+True
+----------------------------------------
+mov m m 
+mov m m 
+mov m m 
+jmp m n 
+mov o n 
+add m o 
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+push r o 
+push r o 
+sub m o 
+test r r 
+mov o n 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+test r r 
+jnz m n 
+True
+----------------------------------------
+jmp m n 
+cmp o m 
+mov o n 
+jnz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+test r r 
+jnz m n 
+True
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+mov m m 
+lea o o 
+jmp m n 
+mov o n 
+add m o 
+cmp r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+lea o o 
+call m o 
+lea o o 
+test r r 
+jz m n 
+False
+----------------------------------------
+push r o 
+push r o 
+mov m m 
+push r o 
+mov m m 
+lea o o 
+mov m m 
+call m o 
+push r o 
+push r o 
+mov m m 
+mov o n 
+xor r o 
+sub m o 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+lea o o 
+mov m m 
+shl m o 
+cmp o m 
+jnz m n 
+True
+----------------------------------------
+mov m m 
+nop m n 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov m m 
+add m o 
+shl m o 
+mov m m 
+lea o o 
+mov o n 
+add m o 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+test r r 
+mov m m 
+jnz m n 
+False
+----------------------------------------
+movzx o o 
+mov m m 
+inc r o 
+inc r o 
+test r m 
+jz m n 
+False
+----------------------------------------
+test r m 
+jz m n 
+True
+----------------------------------------
+nop m n 
+mov o n 
+mov o n 
+mov m m 
+mov m m 
+sub m o 
+lea o o 
+lea o o 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+mov o n 
+test r r 
+jnz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+test r r 
+mov o n 
+setnz o r 
+movzx r o 
+or o o 
+mov m m 
+movzx o o 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+cmp r m 
+jz m n 
+False
+----------------------------------------
+test r r 
+setz o r 
+movzx r o 
+mov m m 
+mov m m 
+mov o n 
+movzx o o 
+cmp r m 
+mov o n 
+mov o n 
+cmovnz o o 
+test r r 
+mov m m 
+jz m n 
+True
+----------------------------------------
+cmp o m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+cmp r r 
+jz m n 
+True
+----------------------------------------
+cmp r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+cmp o m 
+jnz m n 
+True
+----------------------------------------
+add m o 
+add m o 
+cmp r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+cmp r r 
+mov m m 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+mov o n 
+jmp m n 
+cmp r r 
+jz m n 
+False
+----------------------------------------
+cmp r m 
+jz m n 
+True
+----------------------------------------
+cmp o m 
+jnz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+cmp r m 
+jz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+and m o 
+cmp r m 
+jnz m n 
+True
+----------------------------------------
+cmp r m 
+jz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+cmp o m 
+jnz m n 
+False
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+lea o o 
+lea o o 
+mov m m 
+call m o 
+mov o n 
+lea o o 
+cmp r r 
+jz m n 
+True
+----------------------------------------
+test r r 
+movss o o 
+jnz m n 
+True
+----------------------------------------
+ucomiss r o 
+jb m n 
+True
+----------------------------------------
+cvttss2si r o 
+jmp m n 
+mov m m 
+call m o 
+cmp r m 
+jbe m n 
+False
+----------------------------------------
+or m o 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+nop n n 
+cmp r m 
+jbe m n 
+False
+----------------------------------------
+mov m m 
+mul r o 
+shr m o 
+lea o o 
+cmp r r 
+jz m n 
+True
+----------------------------------------
+add m o 
+cmp r m 
+jnz m n 
+True
+----------------------------------------
+cmp r m 
+jbe m n 
+False
+----------------------------------------
+mov o n 
+mov o n 
+mov o n 
+jmp m n 
+add r o 
+add m o 
+cmp r r 
+jb m n 
+True
+----------------------------------------
+xor r o 
+mov m m 
+add m o 
+div r o 
+test r r 
+jz m n 
+False
+----------------------------------------
+add r o 
+add m o 
+cmp r r 
+jb m n 
+True
+----------------------------------------
+xor r o 
+mov m m 
+div r o 
+test r r 
+jnz m n 
+True
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+mov m m 
+push r o 
+mov o n 
+push r o 
+or r o 
+push r o 
+mov m m 
+push r o 
+push r o 
+imul r o 
+cmp r r 
+jbe m n 
+True
+----------------------------------------
+mov o n 
+mov o n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+and m o 
+jz m n 
+True
+----------------------------------------
+mov o n 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+cmpxchg r o 
+jz m n 
+True
+----------------------------------------
+jmp m n 
+mov o n 
+lea o o 
+mov o n 
+and m o 
+cmp r r 
+jz m n 
+True
+----------------------------------------
+add m o 
+mov m m 
+test o m 
+jnz m n 
+False
+----------------------------------------
+mov m m 
+call m o 
+push r o 
+push r o 
+push r o 
+push r o 
+push r o 
+push r o 
+sub m o 
+cmp o m 
+jz m n 
+False
+----------------------------------------
+mov m m 
+cmp r m 
+jz m n 
+True
+----------------------------------------
+or m o 
+lea o o 
+lea o o 
+lea o o 
+lea o o 
+mov m m 
+mov o n 
+mov m m 
+sub r o 
+mov m m 
+mov m m 
+nop m n 
+xor r o 
+xchg o o 
+lea o o 
+test r r 
+mov m m 
+jz m n 
+True
+----------------------------------------
+cmp r o 
+lea o o 
+jz m n 
+False
+----------------------------------------
+mov m m 
+jmp m n 
+xor r o 
+xchg o o 
+lea o o 
+test r r 
+mov m m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+add m o 
+add r o 
+lea o o 
+mov o n 
+lea o o 
+cmp r r 
+jz m n 
+True
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+cmp o m 
+jz m n 
+True
+----------------------------------------
+dec o o 
+jz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+test r m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+and m o 
+test r r 
+jnz m n 
+False
+----------------------------------------
+lea o o 
+cmp r r 
+jnz m n 
+False
+----------------------------------------
+lea o o 
+movdqu r o 
+and m o 
+movdqu r o 
+movdqu r o 
+movdqu r o 
+movdqu r o 
+movdqu r o 
+movdqu r o 
+movdqu r o 
+add r o 
+and m o 
+cmp r r 
+jz m n 
+False
+----------------------------------------
+nop n n 
+movdqa r o 
+movdqa r o 
+movdqa r o 
+movdqa r o 
+add m o 
+cmp r r 
+jnz m n 
+True
+----------------------------------------
+movdqa r o 
+movdqa r o 
+movdqa r o 
+movdqa r o 
+add m o 
+cmp r r 
+jnz m n 
+True
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov o n 
+mov m m 
+xor r o 
+call m o 
+push r o 
+push r o 
+mov m m 
+push r o 
+mov m m 
+mov m m 
+sub m o 
+cmp o m 
+jnz m n 
+False
+----------------------------------------
+test r r 
+jnz m n 
+False
+----------------------------------------
+add m o 
+mov m m 
+mov m m 
+mov m m 
+pop r o 
+pop r o 
+pop r o 
+jmp m n 
+push r o 
+push r o 
+mov m m 
+push r o 
+push r o 
+mov m m 
+xor r o 
+mov m m 
+sub m o 
+lea o o 
+lea o o 
+mov m m 
+mov m m 
+xor r o 
+call m o 
+sub m o 
+mov m m 
+mov m m 
+xor r o 
+test r r 
+jz m n 
+False
+----------------------------------------
+cmp o m 
+jz m n 
+True
+----------------------------------------
+cmp r m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+push r o 
+movzx r o 
+push r o 
+mov m m 
+xor r o 
+xor r o 
+mov m m 
+mov m m 
+lea o o 
+push r o 
+push m o 
+call m o 
+push r o 
+mov m m 
+push r o 
+push r o 
+push r o 
+push r o 
+mov m m 
+push r o 
+mov m m 
+sub m o 
+mov o n 
+mov m m 
+mov m m 
+mov m m 
+xor r o 
+mov m m 
+mov m m 
+mov m m 
+mov o n 
+mov m m 
+mov m m 
+mov o n 
+mov m m 
+mov o n 
+test r r 
+mov m m 
+setnz o o 
+cmp o m 
+movzx o o 
+jz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov o n 
+mov o n 
+mov o n 
+mov o n 
+cmp o m 
+lea o o 
+mov m m 
+mov m m 
+jz m n 
+True
+----------------------------------------
+test r r 
+mov o n 
+setnz o r 
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov m m 
+mov m m 
+and m o 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+cmp o m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov o n 
+mov o n 
+call m o 
+sub m o 
+mov m m 
+mov m m 
+xor r o 
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+xor r o 
+jnz m n 
+False
+----------------------------------------
+test r r 
+mov m m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov o n 
+mov o n 
+call m o 
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov o n 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+cmp r m 
+setz o r 
+and o o 
+movzx r o 
+test r r 
+mov m m 
+jnz m n 
+False
+----------------------------------------
+cmp r m 
+jz m n 
+True
+----------------------------------------
+cmp o m 
+jnz m n 
+True
+----------------------------------------
+test r r 
+mov m m 
+setnz o r 
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+cmp o r 
+jz m n 
+False
+----------------------------------------
+xor r o 
+xor r o 
+cmp o m 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+mov o n 
+and m o 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+movzx o o 
+test r r 
+jnz m n 
+True
+----------------------------------------
+mov o n 
+and m o 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+and m o 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+cmp o r 
+jnz m n 
+True
+----------------------------------------
+cmp r m 
+jz m n 
+False
+----------------------------------------
+cmp o m 
+jz m n 
+True
+----------------------------------------
+cmp o m 
+jnz m n 
+True
+----------------------------------------
+mov o n 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+cmp r m 
+jz m n 
+False
+----------------------------------------
+cmp r m 
+jnz m n 
+False
+----------------------------------------
+cmp o m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov o n 
+mov m m 
+mov m m 
+call m o 
+and m o 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+push r o 
+mov m m 
+call m o 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+test r r 
+jnz m n 
+False
+----------------------------------------
+mov m m 
+mov m m 
+and m o 
+jnz m n 
+True
+----------------------------------------
+cmp r r 
+jz m n 
+True
+----------------------------------------
+cmp r r 
+jnz m n 
+False
+----------------------------------------
+test r r 
+movzx o o 
+movzx o o 
+jnz m n 
+True
+----------------------------------------
+test r r 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+xor m o 
+mov m m 
+and m o 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+cmp r m 
+jz m n 
+False
+----------------------------------------
+cmp o m 
+mov o n 
+jz m n 
+False
+----------------------------------------
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov o n 
+mov m m 
+mov m m 
+mov m m 
+call m o 
+sub m o 
+mov m m 
+mov m m 
+xor r o 
+test r r 
+jz m n 
+True
+----------------------------------------
+test r r 
+movzx o o 
+movzx o o 
+jnz m n 
+False
+----------------------------------------
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+and m o 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+movzx o o 
+test r r 
+jnz m n 
+True
+----------------------------------------
+mov o n 
+and m o 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+xor r o 
+jmp m n 
+cmp o m 
+jz m n 
+False
+----------------------------------------
+cmp o m 
+jz m n 
+True
+----------------------------------------
+cmp r m 
+setnz o r 
+mov m m 
+and o o 
+mov m m 
+jz m n 
+True
+----------------------------------------
+cmp r m 
+setz o r 
+mov m m 
+and o o 
+jnz m n 
+False
+----------------------------------------
+movzx o o 
+test r r 
+jz m n 
+False
+----------------------------------------
+cmp o m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+xor r o 
+jmp m n 
+mov o n 
+xor r o 
+jnz m n 
+False
+----------------------------------------
+movzx o o 
+movzx o o 
+mov m m 
+mov m m 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+movzx o o 
+jmp m n 
+test r r 
+jnz m n 
+True
+----------------------------------------
+test r r 
+movzx o o 
+jnz m n 
+False
+----------------------------------------
+cmp o m 
+jz m n 
+True
+----------------------------------------
+cmp o m 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+cmp o m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov o n 
+mov o n 
+call m o 
+test r r 
+jz m n 
+True
+----------------------------------------
+movzx o o 
+jmp m n 
+mov o n 
+xor r o 
+mov m m 
+jnz m n 
+False
+----------------------------------------
+add m o 
+mov o n 
+xor r o 
+jnz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+cmp o m 
+jz m n 
+True
+----------------------------------------
+movzx o o 
+test r r 
+jnz m n 
+True
+----------------------------------------
+mov m m 
+jmp m n 
+mov o n 
+xor r o 
+jnz m n 
+False
+----------------------------------------
+mov m m 
+jmp m n 
+xor m o 
+mov o n 
+xor r o 
+movzx r o 
+jnz m n 
+False
+----------------------------------------
+mov m m 
+call m o 
+lea o o 
+sub m o 
+mov o n 
+call m o 
+push r o 
+push r o 
+mov m m 
+push r o 
+push r o 
+mov m m 
+mov m m 
+sub m o 
+call m o 
+push r o 
+push r o 
+sub m o 
+mov o n 
+mov m m 
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+shl m o 
+test r r 
+lea o o 
+jz m n 
+False
+----------------------------------------
+sub m o 
+mov m m 
+mov o n 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+cmp r m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+sub o o 
+mov m m 
+xor r o 
+test o m 
+jz m n 
+True
+----------------------------------------
+test r r 
+jnz m n 
+False
+----------------------------------------
+test o m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+and m o 
+jnz m n 
+True
+----------------------------------------
+test r r 
+jnz m n 
+True
+----------------------------------------
+cmp r m 
+jnz m n 
+False
+----------------------------------------
+push r o 
+push r o 
+push r o 
+mov o n 
+mov m m 
+test r m 
+jnz m n 
+True
+----------------------------------------
+call m o 
+test o m 
+jz m n 
+False
+----------------------------------------
+push r o 
+push r o 
+mov m m 
+sub m o 
+mov o n 
+test r r 
+jnz m n 
+True
+----------------------------------------
+mov m m 
+mov m m 
+mov m m 
+mov m m 
+mov m m 
+mov m m 
+and m o 
+jnz m n 
+False
+----------------------------------------
+jmp m n 
+mov m m 
+cmp r o 
+jz m n 
+False
+----------------------------------------
+mov o n 
+xor r o 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+cmpxchg r o 
+jz m n 
+True
+----------------------------------------
+mov m m 
+mov o n 
+mov o n 
+mov m m 
+mov m m 
+add m o 
+and m o 
+mov m m 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+cmp r o 
+jz m n 
+False
+----------------------------------------
+mov o n 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+cmpxchg r o 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov o n 
+mov m m 
+mov m m 
+and m o 
+mov o n 
+add m o 
+test r r 
+jz m n 
+False
+----------------------------------------
+cmp r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+cmp r r 
+jnz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jnz m n 
+True
+----------------------------------------
+cmp r r 
+jz m n 
+True
+----------------------------------------
+add m o 
+mov o n 
+add m o 
+mov m m 
+jmp m n 
+and m o 
+test r r 
+mov m m 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+mov o n 
+sub m o 
+test r r 
+mov m m 
+mov o n 
+jz m n 
+True
+----------------------------------------
+mov o n 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+dec o o 
+jz m n 
+True
+----------------------------------------
+mov o n 
+jmp m n 
+sub m o 
+mov o n 
+test r r 
+mov m m 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+dec o o 
+jz m n 
+True
+----------------------------------------
+test r r 
+jnz m n 
+True
+----------------------------------------
+mov o n 
+mov m m 
+mov o n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+test r r 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+test r m 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+cmp r o 
+jz m n 
+False
+----------------------------------------
+mov o n 
+xor r o 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+cmpxchg r o 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov o n 
+mov m m 
+add m o 
+mov m m 
+and m o 
+test r m 
+jz m n 
+False
+----------------------------------------
+mov m m 
+call m o 
+push r o 
+push r o 
+push r o 
+mov o n 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+xor r o 
+mov m m 
+and m o 
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov m m 
+xor r o 
+call m o 
+push r o 
+cmp o m 
+mov m m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+test o m 
+jz m n 
+True
+----------------------------------------
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+xor r o 
+xor r o 
+xor r o 
+mov m m 
+call m o 
+push r o 
+mov m m 
+sub m o 
+mov o n 
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov o n 
+mov m m 
+mov o n 
+mov o n 
+mov o n 
+mov o n 
+call m o 
+test o m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov m m 
+and m o 
+jmp m n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+sub m o 
+jz m n 
+True
+----------------------------------------
+mov o n 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+dec o o 
+jz m n 
+True
+----------------------------------------
+push r o 
+cmp o m 
+mov m m 
+jz m n 
+True
+----------------------------------------
+mov m m 
+xor r o 
+pop r o 
+jmp m n 
+push r o 
+push r o 
+mov m m 
+sub m o 
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+test o m 
+jnz m n 
+False
+----------------------------------------
+cmp o m 
+jz m n 
+True
+----------------------------------------
+cmp r o 
+jz m n 
+True
+----------------------------------------
+and m o 
+test r r 
+jnz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+test r r 
+jnz m n 
+False
+----------------------------------------
+test r r 
+jnz m n 
+False
+----------------------------------------
+and m o 
+jnz m n 
+True
+----------------------------------------
+mov m m 
+call m o 
+test r r 
+push r o 
+mov m m 
+jz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+push r o 
+mov o n 
+mov m m 
+and m o 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+cmp r o 
+jz m n 
+False
+----------------------------------------
+mov o n 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+cmpxchg r o 
+jz m n 
+True
+----------------------------------------
+push r o 
+mov o n 
+mov m m 
+mov o n 
+cmp r r 
+jbe m n 
+True
+----------------------------------------
+mov o n 
+sub o o 
+jnz m n 
+False
+----------------------------------------
+xor r o 
+test r r 
+setnz o r 
+neg r o 
+test o m 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+sub m o 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+cmp o m 
+jz m n 
+True
+----------------------------------------
+dec o o 
+jz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+jmp m n 
+lea o o 
+jmp m n 
+mov o n 
+add m o 
+mov m m 
+jmp m n 
+and m o 
+test r r 
+mov m m 
+jnz m n 
+False
+----------------------------------------
+cmp r o 
+jz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+add m o 
+mov m m 
+jmp m n 
+and m o 
+test r r 
+mov m m 
+jnz m n 
+False
+----------------------------------------
+cmp r o 
+jz m n 
+True
+----------------------------------------
+test r r 
+jnz m n 
+False
+----------------------------------------
+jmp m n 
+mov o n 
+mov m m 
+shl m o 
+test r r 
+lea o o 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+mov m m 
+and m o 
+nop n n 
+mov m m 
+and m o 
+jnz m n 
+False
+----------------------------------------
+test r r 
+jnz m n 
+True
+----------------------------------------
+cmp r m 
+jz m n 
+False
+----------------------------------------
+mov m m 
+and m o 
+cmp r m 
+jnz m n 
+False
+----------------------------------------
+mov m m 
+cmp r o 
+jz m n 
+False
+----------------------------------------
+and m o 
+mov m m 
+cmpxchg r o 
+jz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+movzx o o 
+shr m o 
+mov m m 
+and m o 
+cmp r o 
+mov m m 
+jnz m n 
+False
+----------------------------------------
+lea o o 
+mov m m 
+shr m o 
+shl m o 
+sub r o 
+xor r o 
+mov m m 
+jmp m n 
+cmp o r 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+mov m m 
+add m o 
+add m o 
+mov m m 
+mov o n 
+test r r 
+jnz m n 
+True
+----------------------------------------
+cmp o r 
+jnz m n 
+False
+----------------------------------------
+nop m n 
+mov m m 
+mov m m 
+cmp r m 
+mov m m 
+mov m m 
+jz m n 
+False
+----------------------------------------
+cmp r m 
+jbe m n 
+False
+----------------------------------------
+jmp m n 
+lea o o 
+movzx o o 
+lea o o 
+mov o n 
+mov m m 
+lea o o 
+mov o n 
+cmp r o 
+jnz m n 
+False
+----------------------------------------
+cmp o m 
+jz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+lea o o 
+mov o n 
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+nop m n 
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+add m o 
+cmp r r 
+jnz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+sub m o 
+cmp o r 
+jb m n 
+True
+----------------------------------------
+jmp m n 
+mov m m 
+cmp o r 
+mov m m 
+mov m m 
+jz m n 
+False
+----------------------------------------
+lea o o 
+movzx o o 
+lea o o 
+mov o n 
+mov m m 
+lea o o 
+mov o n 
+cmp r o 
+jnz m n 
+False
+----------------------------------------
+sub o o 
+mov o n 
+mov m m 
+mov m m 
+mov m m 
+mov m m 
+mov m m 
+lea o o 
+mov m m 
+lea o o 
+mov m m 
+call m o 
+push r o 
+mov m m 
+push r o 
+push r o 
+push r o 
+sub r o 
+mov m m 
+sub m o 
+cmp r r 
+jb m n 
+False
+----------------------------------------
+cmp r m 
+mov m m 
+mov m m 
+jbe m n 
+False
+----------------------------------------
+mov m m 
+neg r o 
+and m o 
+sub r o 
+test r r 
+mov m m 
+jz m n 
+True
+----------------------------------------
+mov m m 
+mov m m 
+mov m m 
+shr m o 
+test r m 
+jz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+sub m o 
+jmp m n 
+mov o n 
+mov m m 
+mov o n 
+mov m m 
+mov o n 
+mov m m 
+jmp m n 
+mov o n 
+mov m m 
+mov o n 
+mov m m 
+mov o n 
+mov m m 
+mov o n 
+add m o 
+mov m m 
+sub m o 
+jz m n 
+True
+----------------------------------------
+jmp m n 
+mov m m 
+mov m m 
+and m o 
+and m o 
+add r o 
+add r o 
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov o n 
+mov o n 
+mov o n 
+mov o n 
+mov o n 
+movzx o o 
+sub r o 
+mov m m 
+cmp r r 
+jbe m n 
+True
+----------------------------------------
+lea o o 
+lea o o 
+mov m m 
+mov m m 
+call m o 
+push r o 
+mov m m 
+push r o 
+push r o 
+push r o 
+sub r o 
+mov m m 
+sub m o 
+cmp r r 
+jb m n 
+False
+----------------------------------------
+call m o 
+mov m m 
+mov m m 
+mov o n 
+and m o 
+and m o 
+and m o 
+shl m o 
+push r o 
+sub r o 
+cmp r m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov o n 
+add m o 
+sub m o 
+sub m o 
+jmp m n 
+mov m m 
+mov m m 
+mov o n 
+shr r o 
+mov m m 
+add m o 
+shl r o 
+or r o 
+mov m m 
+sub m o 
+jz m n 
+True
+----------------------------------------
+mov m m 
+mov m m 
+and m o 
+and m o 
+add r o 
+add r o 
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov o n 
+mov m m 
+jmp m n 
+lea o o 
+movzx o o 
+lea o o 
+mov o n 
+mov m m 
+lea o o 
+mov o n 
+cmp r o 
+jnz m n 
+False
+----------------------------------------
+movd r o 
+test r m 
+jnz m n 
+True
+----------------------------------------
+mov o n 
+add m o 
+sub m o 
+sub m o 
+jmp m n 
+mov o n 
+mov m m 
+mov o n 
+mov m m 
+mov o n 
+mov m m 
+mov o n 
+add m o 
+mov m m 
+sub m o 
+jz m n 
+True
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+movzx o o 
+cmp r m 
+mov m m 
+jz m n 
+False
+----------------------------------------
+movzx o o 
+cmp r m 
+mov m m 
+jz m n 
+False
+----------------------------------------
+movzx o o 
+cmp r m 
+mov m m 
+jz m n 
+False
+----------------------------------------
+movzx o o 
+cmp r m 
+mov m m 
+jz m n 
+False
+----------------------------------------
+movzx o o 
+cmp r m 
+mov m m 
+jz m n 
+False
+----------------------------------------
+movzx o o 
+cmp r m 
+mov m m 
+jz m n 
+False
+----------------------------------------
+movzx o o 
+cmp r m 
+mov m m 
+jz m n 
+False
+----------------------------------------
+movzx o o 
+cmp r m 
+mov m m 
+jz m n 
+False
+----------------------------------------
+movzx o o 
+cmp r m 
+mov m m 
+jz m n 
+False
+----------------------------------------
+movzx o o 
+cmp r m 
+mov m m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+add m o 
+sub m o 
+sub m o 
+jmp m n 
+mov o n 
+mov m m 
+mov o n 
+add m o 
+mov m m 
+sub m o 
+jz m n 
+True
+----------------------------------------
+test r m 
+jnz m n 
+True
+----------------------------------------
+test r m 
+jz m n 
+True
+----------------------------------------
+test r m 
+jz m n 
+False
+----------------------------------------
+mov m m 
+cmp o r 
+mov m m 
+mov m m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+mov m m 
+mov m m 
+mov m m 
+and m o 
+and m o 
+jnz m n 
+False
+----------------------------------------
+test r r 
+jnz m n 
+True
+----------------------------------------
+cmp r m 
+jnz m n 
+True
+----------------------------------------
+mov m m 
+and m o 
+cmp r m 
+jnz m n 
+False
+----------------------------------------
+mov m m 
+cmp o r 
+jz m n 
+True
+----------------------------------------
+sub m o 
+jz m n 
+True
+----------------------------------------
+mov o n 
+sub m o 
+and m o 
+dec o o 
+jz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+mov m m 
+mov o n 
+xor r o 
+nop m n 
+mov o n 
+movzx o o 
+test r m 
+jz m n 
+False
+----------------------------------------
+and m o 
+mov m m 
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+test o m 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+mov o n 
+add o o 
+mov o n 
+shr m o 
+test r r 
+lea o o 
+jnz m n 
+True
+----------------------------------------
+cmp o m 
+jnz m n 
+False
+----------------------------------------
+cmp o m 
+push r o 
+mov m m 
+jz m n 
+False
+----------------------------------------
+push r o 
+push r o 
+push r o 
+push r o 
+xor r o 
+push r o 
+push r o 
+mov m m 
+sub m o 
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+nop m n 
+mov o n 
+lea o o 
+shl m o 
+lea o o 
+cmp r r 
+jb m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+nop m n 
+mov o n 
+lea o o 
+shl m o 
+lea o o 
+cmp r r 
+jb m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+add m o 
+mov m m 
+pop r o 
+pop r o 
+pop r o 
+pop r o 
+pop r o 
+pop r o 
+jmp m n 
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+cmp r o 
+mov m m 
+jnz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+call m o 
+lea o o 
+lea o o 
+push r o 
+sub r o 
+mov m m 
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+test r r 
+lea o o 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+mov o n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+movzx o o 
+test r m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+False
+----------------------------------------
+test o m 
+jz m n 
+True
+----------------------------------------
+cmp o m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+cmp r r 
+jnz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+cmp o m 
+jnz m n 
+False
+----------------------------------------
+cmp o m 
+push r o 
+mov m m 
+jz m n 
+False
+----------------------------------------
+call m o 
+lea o o 
+lea o o 
+push r o 
+sub r o 
+mov m m 
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+cmp o m 
+jnz m n 
+False
+----------------------------------------
+cmp o m 
+push r o 
+mov m m 
+jz m n 
+False
+----------------------------------------
+call m o 
+lea o o 
+lea o o 
+push r o 
+sub r o 
+mov m m 
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+cmp o m 
+jnz m n 
+False
+----------------------------------------
+cmp o m 
+push r o 
+mov m m 
+jz m n 
+False
+----------------------------------------
+call m o 
+lea o o 
+lea o o 
+push r o 
+sub r o 
+mov m m 
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+lea o o 
+jmp m n 
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+cmp o m 
+jnz m n 
+False
+----------------------------------------
+cmp o m 
+push r o 
+mov m m 
+jz m n 
+False
+----------------------------------------
+call m o 
+lea o o 
+lea o o 
+push r o 
+sub r o 
+mov m m 
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+cmp o m 
+jnz m n 
+False
+----------------------------------------
+cmp o m 
+push r o 
+mov m m 
+jz m n 
+False
+----------------------------------------
+call m o 
+lea o o 
+lea o o 
+push r o 
+sub r o 
+mov m m 
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+cmp o m 
+jnz m n 
+False
+----------------------------------------
+cmp o m 
+push r o 
+mov m m 
+jz m n 
+False
+----------------------------------------
+call m o 
+lea o o 
+lea o o 
+push r o 
+sub r o 
+mov m m 
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+cmp o m 
+jnz m n 
+False
+----------------------------------------
+cmp o m 
+push r o 
+mov m m 
+jz m n 
+False
+----------------------------------------
+call m o 
+lea o o 
+lea o o 
+push r o 
+sub r o 
+mov m m 
+cmp r m 
+jbe m n 
+True
+----------------------------------------
+mov o n 
+mov o n 
+jmp m n 
+sub m o 
+sub m o 
+mov o n 
+cmp r m 
+jz m n 
+True
+----------------------------------------
+mov o n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+test r r 
+jz m n 
+True
+----------------------------------------
+test o m 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+test r r 
+mov m m 
+jnz m n 
+False
+----------------------------------------
+test r r 
+jz m n 
+False
+----------------------------------------
+push r o 
+push r o 
+xor r o 
+push r o 
+push r o 
+mov m m 
+sub m o 
+call m o 
+push r o 
+push r o 
+mov m m 
+push r o 
+push r o 
+push r o 
+push r o 
+sub m o 
+test r r 
+jz m n 
+True
+----------------------------------------
+mov o n 
+xor r o 
+mov o n 
+test r r 
+jnz m n 
+False
+----------------------------------------
+mov o n 
+mov m m 
+test r r 
+jnz m n 
+False
+----------------------------------------
+add m o 
+cmp r r 
+jb m n 
+False
+--------------------
