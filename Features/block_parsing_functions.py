@@ -18,7 +18,7 @@ def generate_block(lines, start, end):
 def filter_jz_blocks(blocks):
     jz_blocks = []
     for block in blocks:
-        if block[-2][-2] in ['jz','jnz','jb','jbe']:
+        if block[-2][-3] in ['jz','jnz','jb','jbe']:
             jz_blocks.append(block)
     return jz_blocks
 
@@ -79,7 +79,9 @@ def read_unprocessed_file(filename):
         elif line.split(" ")[0] == "Actual:":
             block_end = i
 
-            blocks.append(generate_unprocessed_block(block_lines, block_start, block_end))
+            block = generate_unprocessed_block(block_lines, block_start, block_end)
+            #print(block)
+            blocks.append(block)
     return blocks
 
 def create_block_object(block_lines):
