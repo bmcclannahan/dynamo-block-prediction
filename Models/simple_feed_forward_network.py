@@ -1,7 +1,7 @@
 from input import get_simple_feed_forward_input_array, build_input_from_multiple_files
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
-import numpy
+import numpy as np
 import os
 
 input_files = ['Feature_Files/'+ f for f in os.listdir('Feature_Files')]
@@ -46,11 +46,11 @@ true_incorrect = 0
 false_incorrect = 0
 for i in range(len(prediction)):
     total += 1
-    if prediction[i] > threshold and output_array[i][0] == 1:
+    if prediction[i] > threshold and output_array[i] == 1:
         true_correct += 1
-    elif prediction[i] < threshold and output_array[i][0] == 0:
+    elif prediction[i] < threshold and output_array[i] == 0:
         false_correct += 1
-    elif prediction[i] > threshold and output_array[i][0] == 0:
+    elif prediction[i] > threshold and output_array[i] == 0:
         true_incorrect += 1
     else:
         false_incorrect += 1

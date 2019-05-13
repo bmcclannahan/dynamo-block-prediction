@@ -41,7 +41,7 @@ print('true_array', true_array[(len(true_array))//4], true_array[(len(true_array
 print('false_array', false_array[(len(false_array))//4], false_array[(len(false_array))//2], false_array[(3*len(false_array))//4])
 
 print("Threshold Calc", true_median, false_median)
-threshold = .5#(true_median + false_median)/2
+threshold = (true_average + false_average)/2
 
 total = 0
 true_correct = 0
